@@ -1,17 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
-import { Home } from './home';
-import { IntroductionLocationOfMembrane } from './introduction/locationofmembrane';
-import { IntroductionAmphipathicity } from './introduction/amphipathicity';
+import { Home } from "./home";
+import { Summary } from "./summary/summary";
 
-import { MembraneLipidsAmphipathicity } from './membranelipids/amphipathicity';
-import { MembraneLipidsLipidStruture1 } from './membranelipids/lipidstructure1';
-import { MembraneLipidsMembraneFluidity } from './membranelipids/membranefluidity';
+import { IntroductionLocationOfMembrane } from "./introduction/locationofmembrane";
+import { IntroductionAmphipathicity } from "./introduction/amphipathicity";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import { MembraneLipidsAmphipathicity } from "./membranelipids/amphipathicity";
+import { MembraneLipidsLipidStruture1 } from "./membranelipids/lipidstructure1";
+import { MembraneLipidsMembraneFluidity } from "./membranelipids/membranefluidity";
+import { MembraneLipidsMembraneAsymmetry } from "./membranelipids/membraneasymmetry";
+
+import { MembraneProteinIntegralAndPeripheral } from "./membraneproteins/integralandperipheral";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
@@ -19,14 +24,46 @@ root.render(
         <Route path="" element={<Home />} />
         <Route path="/introduction">
           <Route path="" element={<Navigate to="locationofmembrane" />} />
-          <Route index path="locationofmembrane" element={<IntroductionLocationOfMembrane />} />
-          <Route path="amphipathicity" element={<IntroductionAmphipathicity />} />
+          <Route
+            index
+            path="locationofmembrane"
+            element={<IntroductionLocationOfMembrane />}
+          />
+          <Route
+            path="amphipathicity"
+            element={<IntroductionAmphipathicity />}
+          />
         </Route>
         <Route path="/membranelipids">
-          <Route index path="amphipathicity" element={<MembraneLipidsAmphipathicity />} />
-          <Route index path="lipidstructure1" element={<MembraneLipidsLipidStruture1 />} />
-          <Route index path="membranefluidity" element={<MembraneLipidsMembraneFluidity />} />
+          <Route
+            index
+            path="amphipathicity"
+            element={<MembraneLipidsAmphipathicity />}
+          />
+          <Route
+            index
+            path="lipidstructure1"
+            element={<MembraneLipidsLipidStruture1 />}
+          />
+          <Route
+            index
+            path="membranefluidity"
+            element={<MembraneLipidsMembraneFluidity />}
+          />
+          <Route
+            index
+            path="membraneasymmetry"
+            element={<MembraneLipidsMembraneAsymmetry />}
+          />
         </Route>
+        <Route path="/membraneproteins">
+          <Route
+            index
+            path="integralandperipheral"
+            element={<MembraneProteinIntegralAndPeripheral />}
+          />
+        </Route>
+        <Route path="/summary" element={<Summary />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
