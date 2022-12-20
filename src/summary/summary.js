@@ -1,3 +1,5 @@
 export function Summary() {
-  return <p>Summary</p>;
+  return <div>
+    <b>Summary</b>
+    </div>;
 }

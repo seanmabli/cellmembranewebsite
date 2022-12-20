@@ -8,6 +8,7 @@ import { Summary } from "./summary/summary";
 
 import { IntroductionLocationOfMembrane } from "./introduction/locationofmembrane";
 import { IntroductionAmphipathicity } from "./introduction/amphipathicity";
+import { IntroductionMembraneComposition } from "./introduction/membranecomposition";
 
 import { MembraneLipidsAmphipathicity } from "./membranelipids/amphipathicity";
 import { MembraneLipidsLipidStruture1 } from "./membranelipids/lipidstructure1";
@@ -23,9 +24,13 @@ root.render(
       <Routes>
         <Route path="" element={<Home />} />
         <Route path="/introduction">
-          <Route path="" element={<Navigate to="locationofmembrane" />} />
+          <Route path="" element={<Navigate to="membranecomposition" />} />
           <Route
             index
+            path = "membranecomposition"
+            element={<IntroductionMembraneComposition />}
+          />
+          <Route
             path="locationofmembrane"
             element={<IntroductionLocationOfMembrane />}
           />
