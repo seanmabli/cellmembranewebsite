@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
-import { Home } from "./home";
+import { Home } from "./introduction/home";
 import { Summary } from "./summary/summary";
 
 import { IntroductionLocationOfMembrane } from "./introduction/locationofmembrane";
@@ -16,17 +16,19 @@ import { MembraneLipidsMembraneAsymmetry } from "./membranelipids/membraneasymme
 
 import { MembraneProteinIntegralAndPeripheral } from "./membraneproteins/integralandperipheral";
 
+import { Navbar } from "./compodents/navbar";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+      <Navbar />
       <Routes>
-        <Route path="" element={<Home />} />
         <Route path="/introduction">
-          <Route path="" element={<Navigate to="membranecomposition" />} />
+          <Route path="" element={<Home />} />
           <Route
             index
-            path = "membranecomposition"
+            path="membranecomposition"
             element={<IntroductionMembraneComposition />}
           />
           <Route
