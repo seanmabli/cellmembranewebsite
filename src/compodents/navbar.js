@@ -32,7 +32,7 @@ export function Navbar() {
         return (
           <Button
             onClick={() =>
-              navigate(buttonName.toLowerCase().replace(/\s/g, ""))
+              navigate("/" + location.pathname.split("/")[1] + "/" + buttonName.toLowerCase().replace(/\s/g, ""))
             }
           >
             {buttonName}

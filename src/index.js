@@ -28,6 +28,11 @@ root.render(
           <Route path="" element={<Home />} />
           <Route
             index
+            path="home"
+            element={<Navigate to="/introduction" />}
+          />
+          <Route
+            index
             path="membranecomposition"
             element={<IntroductionMembraneComposition />}
           />
