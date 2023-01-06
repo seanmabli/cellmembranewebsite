@@ -1,3 +1,8 @@
+import { Navbar } from "../compodents/navbar";
+
 export function IntroductionMembraneComposition() {
-    return <p>IntroductionMembraneComposition</p>;
+    return <div>
+        <Navbar section="introduction" subsection="membranecomposition" />
+
+    </div>;
 }

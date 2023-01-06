@@ -1,3 +1,5 @@
+import { Navbar } from "../compodents/navbar";
+
 export function MembraneLipidsAmphipathicity() {
-    return <p>MembraneLipidsAmphipathicity</p>;
+    return <Navbar section="introduction" subsection="membranecomposition" />;
 }

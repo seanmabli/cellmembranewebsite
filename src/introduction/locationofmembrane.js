@@ -1,3 +1,5 @@
+import { Navbar } from "../compodents/navbar";
+
 export function IntroductionLocationOfMembrane() {
-    return <p>IntroductionLocationOfMembrane</p>;
+    return <Navbar section="introduction" subsection="membranecomposition" />;
 }
