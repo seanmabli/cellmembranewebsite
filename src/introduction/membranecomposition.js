@@ -5,6 +5,7 @@ export function IntroductionMembraneComposition() {
   return (
     <div>
       <div className="paragraphs">
+        <h1>Membrane Composition</h1>
         <p>
           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{" "}
           <strong>
@@ -34,7 +35,7 @@ export function IntroductionMembraneComposition() {
         </p>
       </div>
       <div className="image">
-        <img src={membranecompositionimage} /> 
+        <img className="image2" src={membranecompositionimage}/> 
       </div>
     </div>
   );
