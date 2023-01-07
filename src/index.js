@@ -25,12 +25,8 @@ root.render(
       <Navbar />
       <Routes>
         <Route path="/introduction">
-          <Route path="" element={<Home />} />
-          <Route
-            index
-            path="home"
-            element={<Navigate to="/introduction" />}
-          />
+          <Route path="" element={<Navigate to="home" />} />
+          <Route path="home" element={<Home />} />
           <Route
             index
             path="membranecomposition"
