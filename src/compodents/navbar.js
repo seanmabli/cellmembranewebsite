@@ -20,7 +20,7 @@ export function Navbar() {
     introduction: ["Home", "Membrane Composition", "Location of Membrane"],
     membranelipids: [
       "Amphipathicity",
-      "Lipid Structure 1",
+      "Lipid Structure ",
       "Membrane Asymmetry",
       "Membrane Fluidity",
     ],

@@ -10,7 +10,7 @@ import { IntroductionLocationOfMembrane } from "./introduction/locationofmembran
 import { IntroductionMembraneComposition } from "./introduction/membranecomposition";
 
 import { MembraneLipidsAmphipathicity } from "./membranelipids/amphipathicity";
-import { MembraneLipidsLipidStruture1 } from "./membranelipids/lipidstructure1";
+import { MembraneLipidsLipidStruture } from "./membranelipids/lipidstructure";
 import { MembraneLipidsMembraneFluidity } from "./membranelipids/membranefluidity";
 import { MembraneLipidsMembraneAsymmetry } from "./membranelipids/membraneasymmetry";
 
@@ -24,6 +24,7 @@ root.render(
     <BrowserRouter>
       <Navbar />
       <Routes>
+        <Route path="" element={<Navigate to="/introduction" />} />
         <Route path="/introduction">
           <Route path="" element={<Navigate to="home" />} />
           <Route path="home" element={<Home />} />
@@ -46,8 +47,8 @@ root.render(
           />
           <Route
             index
-            path="lipidstructure1"
-            element={<MembraneLipidsLipidStruture1 />}
+            path="lipidstructure"
+            element={<MembraneLipidsLipidStruture />}
           />
           <Route
             index
