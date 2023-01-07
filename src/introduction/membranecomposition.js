@@ -33,9 +33,7 @@ export function IntroductionMembraneComposition() {
           you proceed through the tutorial.
         </p>
       </div>
-      <div className="image">
-        <img src={membranecompositionimage} /> 
-      </div>
+      <img className="image" src={membranecompositionimage} />
     </div>
   );
 }
