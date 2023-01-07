@@ -25,7 +25,7 @@ export function Navbar() {
       "Membrane Fluidity",
     ],
     membraneproteins: ["Integral and Peripheral"],
-    summary: ["Summary"],
+    summary: ["Summary", "Simulation"],
   };
 
   return (

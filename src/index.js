@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import { Home } from "./introduction/home";
 import { Summary } from "./summary/summary";
+import { Simulation } from "./summary/simulation";
 
 import { IntroductionLocationOfMembrane } from "./introduction/locationofmembrane";
 import { IntroductionMembraneComposition } from "./introduction/membranecomposition";
@@ -69,7 +70,11 @@ root.render(
             element={<MembraneProteinIntegralAndPeripheral />}
           />
         </Route>
-        <Route path="/summary" element={<Summary />} />
+        <Route path="/summary">
+          <Route path="" element={<Navigate to="summary" />} />
+          <Route path="summary" element={<Summary />} />
+          <Route path="simulation" element={<Simulation />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

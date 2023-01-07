@@ -1,5 +1,7 @@
-
 export function Summary() {
-  return <div><p>placeholder</p>
-    </div>;
+  return (
+    <div>
+      <p>placeholder</p>
+    </div>
+  );
 }

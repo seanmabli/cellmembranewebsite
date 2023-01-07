@@ -4,7 +4,7 @@ import { Tooltip } from "@mui/material";
 export function IntroductionLocationOfMembrane() {
   return (
     <>
-      <h>Where are Membranes Found?</h>
+      <h1>Where are Membranes Found?</h1>
       <p>
         While all cells are surrounded by a{" "}
         <Tooltip title="A biological membrane that separates and protects the interior of all cells from the outside environment">
