@@ -9,38 +9,38 @@ export function IntroductionLocationOfMembrane() {
       <h1>Where are Membranes Found?</h1>
       <p>
       &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; While all cells are surrounded by a{" "}
-        <Tooltip title="A biological membrane that separates and protects the interior of all cells from the outside environment">
+        <Tooltip title="defintion">
           <strong>
             <u>plasma membrane</u>
           </strong>
         </Tooltip>
         , eukaryotic cells possess additional internal membranes that surround
         organelles like the{" "}
-        <Tooltip title="The structure in a cell that contains the chromosomes">
+        <Tooltip title="defintion">
           <strong>
             <u>nucleus</u>
           </strong>
         </Tooltip>
         , the{" "}
-        <Tooltip title="A continuous membrane system that forms a series of flattened sacs within the cytoplasm of eukaryotic cells and serves multiple functions, being important particularly in the synthesis, folding, modification, and transport of proteins">
+        <Tooltip title="definition">
           <strong>
             <u>endoplasmic reticulum</u>
           </strong>
         </Tooltip>
         , the{" "}
-        <Tooltip title="A complex of vesicles and folded membranes within the cytoplasm of most eukaryotic cells and is involved in secretion and intracellular transport">
+        <Tooltip title="definition">
           <strong>
             <u>Golgi apparatus</u>
           </strong>
         </Tooltip>
         ,{" "}
-        <Tooltip title="An organelle found in large numbers in most cells, in which the biochemical processes of respiration and energy production occur">
+        <Tooltip title="definition">
           <strong>
             <u>mitochondria</u>
           </strong>
         </Tooltip>
         , and{" "}
-        <Tooltip title="An organelle in the cytoplasm of eukaryotic cells containing degradative enzymes enclosed in a membrane">
+        <Tooltip title="definition">
           <strong>
             <u>lysosomes</u>
           </strong>

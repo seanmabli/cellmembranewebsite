@@ -9,14 +9,14 @@ export function IntroductionMembraneComposition() {
         <h1>Membrane Composition</h1>
         <p>
           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          <Tooltip title = 'A selectively permeable membrane that separates the interior of a cell from the external environment or creates intracellular compartments by serving as a boundary between one part of the cell and another'>
+          <Tooltip title = 'definition'>
             <strong>
               <u>Biological membranes</u>
             </strong>
           </Tooltip>
           {" "}are sheet-like structures composed mainly of lipids and proteins. All
           biological membranes have a similar general structure.{" "}
-          <Tooltip title = 'A group of compounds which form the double-layered surface of all cells (the three major classes of membrane lipids are phospholipids, glycolipids, and cholesterol)'>
+          <Tooltip title = 'definition'>
             <strong>
               <u>Membrane lipids</u>
             </strong>
@@ -29,7 +29,7 @@ export function IntroductionMembraneComposition() {
           <br />
           <p> </p>
           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The{" "}
-          <Tooltip title = 'A model stating that the components of a membrane such as proteins or glycolipids, form a mobile mosaic in the fluid-like environment created by a sea of phospholipids'>
+          <Tooltip title = 'definition'>
             <strong>
               <u>fluid-mosaic model</u>
             </strong>
