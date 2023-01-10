@@ -1,12 +1,14 @@
 import "./locationofmembrane.css";
+import locationofmembraneimage from "./locationofmembrane.png";
 import { Tooltip } from "@mui/material";
 
 export function IntroductionLocationOfMembrane() {
   return (
     <>
+    <div className="paragraphs">
       <h1>Where are Membranes Found?</h1>
       <p>
-        While all cells are surrounded by a{" "}
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; While all cells are surrounded by a{" "}
         <Tooltip title="A biological membrane that separates and protects the interior of all cells from the outside environment">
           <strong>
             <u>plasma membrane</u>
@@ -49,7 +51,15 @@ export function IntroductionLocationOfMembrane() {
         containing sequestered enzymes or high concentrations of hydrogen ions
         (low pH). Five general categories of membrane function are illustrated
         in the next section.{" "}
+        <p> </p> 
+        <Tooltip title = 'The answer to this is needed; not in slideshow'>
+          <strong>
+            <u>Extra Info: Which two internal membranes are one and the same?</u>
+          </strong>
+        </Tooltip> 
       </p>
+    </div>
+    <img className="image2" src={locationofmembraneimage} />
     </>
   );
 }

@@ -1,5 +1,5 @@
 import "./membranecomposition.css";
-import membranecompositionimage from "./a.png";
+import membranecompositionimage from "./membranecomposition.png";
 import { Tooltip } from "@mui/material";
 
 export function IntroductionMembraneComposition() {
@@ -8,7 +8,7 @@ export function IntroductionMembraneComposition() {
       <div className="paragraphs">
         <h1>Membrane Composition</h1>
         <p>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{" "}
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
           <Tooltip title = 'A selectively permeable membrane that separates the interior of a cell from the external environment or creates intracellular compartments by serving as a boundary between one part of the cell and another'>
             <strong>
               <u>Biological membranes</u>
@@ -39,9 +39,15 @@ export function IntroductionMembraneComposition() {
           throughout the lipid bilayer as well as the "fluid" movement of lipids
           and proteins alike. You will learn about the details of this model as
           you proceed through the tutorial.
+          <p> </p> 
+          <Tooltip title = 'The answer to this is needed; not in slideshow'>
+            <strong>
+              <u>Extra Info: How do we know that membranes are composed of two layers of lipids, not just one?</u>
+            </strong>
+        </Tooltip> 
         </p>
       </div>
-      <img className="image" src={membranecompositionimage} />
+      <img className="image2" src={membranecompositionimage} />
     </div>
   );
 }
