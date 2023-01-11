@@ -12,7 +12,7 @@
       height="540"
       style="width: 960px; height: 540px; background: #6FF6FF"
     ></canvas>
-    <script src="Build/SciSim.loader.js"></script>
+    <script src="SciSim.loader.js"></script>
     <script>
 
       var canvas = document.querySelector("#unity-canvas");
@@ -20,9 +20,9 @@
       canvas.style.height = "95%";
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/SciSim.data",
-        frameworkUrl: "Build/SciSim.framework.js",
-        codeUrl: "Build/SciSim.wasm",
+        dataUrl: "SciSim.data",
+        frameworkUrl: "SciSim.framework.js",
+        codeUrl: "SciSim.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "SciProj",
