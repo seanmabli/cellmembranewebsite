@@ -9,14 +9,14 @@ export function IntroductionMembraneComposition() {
         <h1>Membrane Composition</h1>
         <p>
           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          <Tooltip title = 'definition'>
+          <Tooltip title = 'a layer that separates a cell or compartment of a cell from the exterior environement that consists of a lipid bilayer'>
             <strong>
               <u>Biological membranes</u>
             </strong>
           </Tooltip>
           {" "}are sheet-like structures composed mainly of lipids and proteins. All
           biological membranes have a similar general structure.{" "}
-          <Tooltip title = 'definition'>
+          <Tooltip title = 'fat molecules used in a membrane: phospholipids, glycolipids, and cholesterol'>
             <strong>
               <u>Membrane lipids</u>
             </strong>
@@ -29,7 +29,7 @@ export function IntroductionMembraneComposition() {
           <br />
           <p> </p>
           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The{" "}
-          <Tooltip title = 'definition'>
+          <Tooltip title = 'a method of representing cell membrane structure and composition'>
             <strong>
               <u>fluid-mosaic model</u>
             </strong>
@@ -39,12 +39,6 @@ export function IntroductionMembraneComposition() {
           throughout the lipid bilayer as well as the "fluid" movement of lipids
           and proteins alike. You will learn about the details of this model as
           you proceed through the tutorial.
-          <p> </p> 
-          <Tooltip title = 'The answer to this is needed; not in slideshow'>
-            <strong>
-              <u>Extra Info: How do we know that membranes are composed of two layers of lipids, not just one?</u>
-            </strong>
-        </Tooltip> 
         </p>
       </div>
       <img className="image2" src={membranecompositionimage} />
