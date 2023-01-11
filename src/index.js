@@ -25,7 +25,7 @@ root.render(
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="" element={<Navigate to="/introduction" />} />
+        <Route index element={<Navigate to="/introduction" />} />
         <Route path="/introduction">
           <Route path="" element={<Navigate to="home" />} />
           <Route path="home" element={<Home />} />
