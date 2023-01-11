@@ -28,70 +28,75 @@ export function Navbar() {
     summary: ["Summary", "Simulation"],
   };
 
-  return (
-    <>
-      <div className="container" style={{ marginTop: "10px" }}>
-        <SubsectionButton
-          variant={
-            location.pathname.split("/")[1] === "introduction" ? "outlined" : ""
-          }
-          onClick={() => navigate("/introduction")}
-        >
-          <b>Introduction</b>
-        </SubsectionButton>
-        <SubsectionButton
-          variant={
-            location.pathname.split("/")[1] === "membranelipids"
-              ? "outlined"
-              : ""
-          }
-          onClick={() => navigate("/membranelipids")}
-        >
-          <b>Membrane Lipids</b>
-        </SubsectionButton>
-        <SubsectionButton
-          variant={
-            location.pathname.split("/")[1] === "membraneproteins"
-              ? "outlined"
-              : ""
-          }
-          onClick={() => navigate("/membraneproteins")}
-        >
-          <b>Membrane Proteins</b>
-        </SubsectionButton>
-        <SubsectionButton
-          variant={
-            location.pathname.split("/")[1] === "summary" ? "outlined" : ""
-          }
-          onClick={() => navigate("/summary")}
-        >
-          <b>Summary</b>
-        </SubsectionButton>
-      </div>
-      <div className="container">
-        {subsections[location.pathname.split("/")[1]].map((buttonName) => {
-          return (
-            <SubsectionButton
-              onClick={() =>
-                navigate(
-                  "/" +
-                    location.pathname.split("/")[1] +
+  if (location.pathname.split("/")[1] !== "") {
+
+    return (
+      <>
+        <div className="container" style={{ marginTop: "10px" }}>
+          <SubsectionButton
+            variant={
+              location.pathname.split("/")[1] === "introduction" ? "outlined" : ""
+            }
+            onClick={() => navigate("/introduction")}
+          >
+            <b>Introduction</b>
+          </SubsectionButton>
+          <SubsectionButton
+            variant={
+              location.pathname.split("/")[1] === "membranelipids"
+                ? "outlined"
+                : ""
+            }
+            onClick={() => navigate("/membranelipids")}
+          >
+            <b>Membrane Lipids</b>
+          </SubsectionButton>
+          <SubsectionButton
+            variant={
+              location.pathname.split("/")[1] === "membraneproteins"
+                ? "outlined"
+                : ""
+            }
+            onClick={() => navigate("/membraneproteins")}
+          >
+            <b>Membrane Proteins</b>
+          </SubsectionButton>
+          <SubsectionButton
+            variant={
+              location.pathname.split("/")[1] === "summary" ? "outlined" : ""
+            }
+            onClick={() => navigate("/summary")}
+          >
+            <b>Summary</b>
+          </SubsectionButton>
+        </div>
+        <div className="container">
+          {subsections[location.pathname.split("/")[1]].map((buttonName) => {
+            return (
+              <SubsectionButton
+                onClick={() =>
+                  navigate(
                     "/" +
-                    buttonName.toLowerCase().replace(/\s/g, "")
-                )
-              }
-              variant={
-                location.pathname.split("/")[2] ===
-                buttonName.toLowerCase().replace(/\s/g, "")
-                  ? "outlined"
-                  : ""
-              }
-            >
-              <b>{buttonName}</b>
-            </SubsectionButton>
-          );
-        })}
-      </div>
-    </>
-  );
+                      location.pathname.split("/")[1] +
+                      "/" +
+                      buttonName.toLowerCase().replace(/\s/g, "")
+                  )
+                }
+                variant={
+                  location.pathname.split("/")[2] ===
+                  buttonName.toLowerCase().replace(/\s/g, "")
+                    ? "outlined"
+                    : ""
+                }
+              >
+                <b>{buttonName}</b>
+              </SubsectionButton>
+            );
+          })}
+        </div>
+      </>
+    );
+  } else {
+    return null;
+  }
 }
