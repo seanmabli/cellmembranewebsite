@@ -7,8 +7,7 @@
 }
  
 .image3 {
-    width: 50%;
-    height: 50%;
+    max-height: 400px;
 }
 .pagination1 {
     float: right;

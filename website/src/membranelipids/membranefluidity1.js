@@ -1,9 +1,12 @@
 import { Tooltip } from "@mui/material";
 import "./amphipathicity.css";
 import Pagination from "@mui/material/Pagination";
+import membranefluidity11 from "./membranefluidity11.mp4";
 import membranefluidity12 from "./membranefluidity12.png";
 import membranefluidity14 from "./membranefluidity14.png";
 import { useState } from "react";
+import { Player } from 'video-react';
+import "./page.css"
 
 export function MembraneLipidsMembraneFluidity1() {
   const [pageNum, setPageNum] = useState(1);
@@ -27,6 +30,11 @@ export function MembraneLipidsMembraneFluidity1() {
             stabilization of membranes.
           </p>
         </div>
+        {/* 
+    <Player>
+      <source src={membranefluidity11} />
+    </Player>*/}
+
         <Pagination
           count={4}
           shape="rounded"
@@ -66,7 +74,9 @@ export function MembraneLipidsMembraneFluidity1() {
             excluding them.
           </p>
         </div>
-        <img className="image3" src={membranefluidity12} />
+    <div className="imagecontainer">
+        <img  src={membranefluidity12} />
+    </div>
         <Pagination
           count={4}
           shape="rounded"
@@ -108,7 +118,9 @@ export function MembraneLipidsMembraneFluidity1() {
             shielded from water).
           </p>
         </div>
-        <img className="image3" src={membranefluidity12} />
+    <div className="imagecontainer">
+        <img src={membranefluidity12} />
+    </div>
         <Pagination
           count={4}
           shape="rounded"
@@ -129,16 +141,16 @@ export function MembraneLipidsMembraneFluidity1() {
               <span style={{ textDecoration: "underline" }}>
                 <strong>hydrogen bonding</strong>
               </span>
-            </Tooltip>{" "}is maximized
-            by the lipid bilayer. In a random mixture of lipids and water, lipid
-            tails intercalate between water molecules, interfering with hydrogen
-            bonding. The formation of the{" "}
+            </Tooltip>{" "}
+            is maximized by the lipid bilayer. In a random mixture of lipids and
+            water, lipid tails intercalate between water molecules, interfering
+            with hydrogen bonding. The formation of the{" "}
             <Tooltip title="define">
               <span style={{ textDecoration: "underline" }}>
                 <strong>lipid bilayer</strong>
               </span>
-            </Tooltip>{" "}minimizes this
-            interference.
+            </Tooltip>{" "}
+            minimizes this interference.
           </p>
           <p>
             Once lipid bilayers have formed, the membrane lipids are made more
@@ -147,23 +159,26 @@ export function MembraneLipidsMembraneFluidity1() {
               <span style={{ textDecoration: "underline" }}>
                 <strong>noncovalent</strong>
               </span>
-            </Tooltip>{" "}forces:{" "}
+            </Tooltip>{" "}
+            forces:{" "}
             <Tooltip title="define">
               <span style={{ textDecoration: "underline" }}>
                 <strong>van der Waals</strong>
               </span>
-            </Tooltip>{" "}attractive forces
-            are at work among the hydrocarbon tails, and{" "}
+            </Tooltip>{" "}
+            attractive forces are at work among the hydrocarbon tails, and{" "}
             <Tooltip title="define">
               <span style={{ textDecoration: "underline" }}>
                 <strong>electrostatic</strong>
               </span>
-            </Tooltip>{" "}and
-            hydrogen boiding attractions take place between the head groups and
-            water.
+            </Tooltip>{" "}
+            and hydrogen boiding attractions take place between the head groups
+            and water.
           </p>
         </div>
-        <img className="image3" src={membranefluidity14} />
+    <div className="imagecontainer">
+        <img src={membranefluidity14} />
+    </div>
         <Pagination
           count={4}
           shape="rounded"
