@@ -25,6 +25,7 @@ export function Summary() {
         both lipids and proteins are constantly in motion.
         <br />
         <p> </p>
+        The{" "}
         <Tooltip title = 'A model stating that the components of a membrane such as proteins or glycolipids, form a mobile mosaic in the fluid-like environment created by a sea of phospholipids'>
           <strong>
             <u>fluid-mosaic model</u>

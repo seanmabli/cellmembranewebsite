@@ -8,20 +8,20 @@ export function MembraneLipidsMembraneAsymmetry() {
     <div className="paragraphs">
       <h1>Membrane Asymmetry is Functionally Important</h1>
       <p>
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;The compositions of the two lipid layers of the membranes are strikingly different. This asymmetry is functionally important. In the{" "}
-        <Tooltip title="defintion">
+        The compositions of the two lipid layers of the membranes are strikingly different. This asymmetry is functionally important. In the{" "}
+        <Tooltip title="a biological membrane that regulates passage of materials in and out of the cell and provides support and protection of the cell">
           <strong>
             <u>plasma membranes</u>
           </strong>
         </Tooltip>
         ,{" "}
-        <Tooltip title="defintion">
+        <Tooltip title="lipids (with a carbohydrate attached) on the cell membrane that facilitate cellular recognition">
           <strong>
             <u>glycolipids</u>
           </strong>
         </Tooltip>
         {" "}are found exclusively in the outer leaflet, where they have important roles in interactions of the cell with its surroundings. A particular{" "}
-        <Tooltip title="defintion">
+        <Tooltip title="the lipids that makes up the cell membrane bilayer (phosphate group in the 'head' of the molecule)">
           <strong>
             <u>phospholipid</u>
           </strong>
