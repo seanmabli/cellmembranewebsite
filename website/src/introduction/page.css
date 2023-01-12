@@ -1,0 +1,16 @@
+.text {
+    max-width: 50%;
+    float: right;
+    right: 10px;
+    top: 0;
+}
+
+.image {
+    max-height: 400px;
+}
+
+.imagecontainer {
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+}

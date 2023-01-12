@@ -6,7 +6,6 @@ export function Summary() {
     <div>
       <h1 className="title">Summary</h1>
       <p>
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{" "}
         <Tooltip title = 'A selectively permeable membrane that separates the interior of a cell from the external environment or creates intracellular compartments by serving as a boundary between one part of the cell and another'>
           <strong>
             <u>Biological membranes</u>
@@ -26,7 +25,6 @@ export function Summary() {
         both lipids and proteins are constantly in motion.
         <br />
         <p> </p>
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The{" "}
         <Tooltip title = 'A model stating that the components of a membrane such as proteins or glycolipids, form a mobile mosaic in the fluid-like environment created by a sea of phospholipids'>
           <strong>
             <u>fluid-mosaic model</u>

@@ -1,14 +1,14 @@
-import "./locationofmembrane.css";
 import locationofmembraneimage from "./locationofmembrane.png";
 import { Tooltip } from "@mui/material";
+import "./page.css"
 
 export function IntroductionLocationOfMembrane() {
   return (
     <>
-    <div className="paragraphs">
+    <div className="text">
       <h1>Where are Membranes Found?</h1>
       <p>
-      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; While all cells are surrounded by a{" "}
+      While all cells are surrounded by a{" "}
         <Tooltip title="a biological membrane that regulates passage of materials in and out of the cell and provides support and protection of the cell">
           <strong>
             <u>plasma membrane</u>
@@ -53,7 +53,9 @@ export function IntroductionLocationOfMembrane() {
         in the next section.{" "}
       </p>
     </div>
-    <img className="image2" src={locationofmembraneimage} />
+    <div className="imagecontainer">
+    <img className="image" src={locationofmembraneimage} />
+    </div>
     </>
   );
 }

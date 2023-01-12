@@ -1,14 +1,13 @@
-import "./membranecomposition.css";
 import membranecompositionimage from "./membranecomposition.png";
 import { Tooltip } from "@mui/material";
+import "./page.css"
 
 export function IntroductionMembraneComposition() {
   return (
     <div>
-      <div className="paragraphs">
+      <div className="text">
         <h1>Membrane Composition</h1>
         <p>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
           <Tooltip title = 'a layer that separates a cell or compartment of a cell from the exterior environement that consists of a lipid bilayer'>
             <strong>
               <u>Biological membranes</u>
@@ -28,7 +27,7 @@ export function IntroductionMembraneComposition() {
           both lipids and proteins are constantly in motion.
           <br />
           <p> </p>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The{" "}
+        The{" "}
           <Tooltip title = 'a method of representing cell membrane structure and composition'>
             <strong>
               <u>fluid-mosaic model</u>
@@ -41,7 +40,8 @@ export function IntroductionMembraneComposition() {
           you proceed through the tutorial.
         </p>
       </div>
-      <img className="image2" src={membranecompositionimage} />
+      <div className="imagecontainer">
+      <img className="image" src={membranecompositionimage} /></div>
     </div>
   );
 }

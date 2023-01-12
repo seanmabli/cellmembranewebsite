@@ -23,6 +23,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+    <div style={{maxWidth: "1250px"}}>
       <Navbar />
       <Routes>
         <Route index element={<Navigate to="/introduction" />} />
@@ -75,7 +76,7 @@ root.render(
           <Route path="summary" element={<Summary />} />
           <Route path="simulation" element={<Simulation />} />
         </Route>
-      </Routes>
+      </Routes></div>
     </BrowserRouter>
   </React.StrictMode>
 );
