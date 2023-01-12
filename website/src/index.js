@@ -12,7 +12,8 @@ import { IntroductionMembraneComposition } from "./introduction/membranecomposit
 
 import { MembraneLipidsAmphipathicity } from "./membranelipids/amphipathicity";
 import { MembraneLipidsLipidStruture } from "./membranelipids/lipidstructure";
-import { MembraneLipidsMembraneFluidity } from "./membranelipids/membranefluidity";
+import { MembraneLipidsMembraneFluidity1 } from "./membranelipids/membranefluidity1";
+import { MembraneLipidsMembraneFluidity2 } from "./membranelipids/membranefluidity2";
 import { MembraneLipidsMembraneAsymmetry } from "./membranelipids/membraneasymmetry";
 
 import { MembraneProteinIntegralAndPeripheral } from "./membraneproteins/integralandperipheral";
@@ -54,8 +55,13 @@ root.render(
           />
           <Route
             index
-            path="membranefluidity"
-            element={<MembraneLipidsMembraneFluidity />}
+            path="membranefluidity1"
+            element={<MembraneLipidsMembraneFluidity1 />}
+          />
+          <Route
+            index
+            path="membranefluidity2"
+            element={<MembraneLipidsMembraneFluidity2 />}
           />
           <Route
             index

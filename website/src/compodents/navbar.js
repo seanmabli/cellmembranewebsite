@@ -21,7 +21,8 @@ export function Navbar() {
     membranelipids: [
       "Amphipathicity",
       "Lipid Structure ",
-      "Membrane Fluidity",
+      "Membrane Fluidity 1",
+      "Membrane Fluidity 2",
       "Membrane Asymmetry",
     ],
     membraneproteins: ["Integral and Peripheral"],
