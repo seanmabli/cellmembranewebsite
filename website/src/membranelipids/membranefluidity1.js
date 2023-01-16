@@ -30,6 +30,7 @@ export function MembraneLipidsMembraneFluidity1() {
         </div>
         <div className="imagecontainer">
           <iframe
+            style={{ marginTop: "50px" }}
             width="560"
             height="315"
             src="https://www.youtube.com/embed/lm-dAvbl330"
@@ -42,7 +43,7 @@ export function MembraneLipidsMembraneFluidity1() {
         <Pagination
           count={5}
           shape="rounded"
-          className="paginationcontainer"
+          className="paginationstyle"
           page={pageNum}
           onChange={(e, value) => setPageNum(value)}
         />
@@ -84,7 +85,7 @@ export function MembraneLipidsMembraneFluidity1() {
         <Pagination
           count={5}
           shape="rounded"
-          className="paginationcontainer"
+          className="paginationstyle"
           page={pageNum}
           onChange={(e, value) => setPageNum(value)}
         />
@@ -128,7 +129,7 @@ export function MembraneLipidsMembraneFluidity1() {
         <Pagination
           count={5}
           shape="rounded"
-          className="paginationcontainer"
+          className="paginationstyle"
           page={pageNum}
           onChange={(e, value) => setPageNum(value)}
         />
@@ -186,7 +187,7 @@ export function MembraneLipidsMembraneFluidity1() {
         <Pagination
           count={5}
           shape="rounded"
-          className="paginationcontainer"
+          className="paginationstyle"
           page={pageNum}
           onChange={(e, value) => setPageNum(value)}
         />
@@ -229,7 +230,7 @@ export function MembraneLipidsMembraneFluidity1() {
         <Pagination
           count={5}
           shape="rounded"
-          className="paginationcontainer"
+          className="paginationstyle"
           page={pageNum}
           onChange={(e, value) => setPageNum(value)}
         />

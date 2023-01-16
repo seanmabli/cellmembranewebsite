@@ -50,7 +50,8 @@ export function MembraneProteinIntegralAndPeripheral() {
         <Pagination
           count={3}
           shape="rounded"
-          className="paginationcontainer"
+          className="paginationstyle"
+          page={pageNum}
           onChange={(e, value) => setPageNum(value)}
         />
       </div>
@@ -84,7 +85,8 @@ export function MembraneProteinIntegralAndPeripheral() {
         <Pagination
           count={3}
           shape="rounded"
-          className="paginationcontainer"
+          className="paginationstyle"
+          page={pageNum}
           onChange={(e, value) => setPageNum(value)}
         />
       </div>
@@ -116,7 +118,8 @@ export function MembraneProteinIntegralAndPeripheral() {
         <Pagination
           count={3}
           shape="rounded"
-          className="pagination2"
+          className="paginationstyle"
+          page={pageNum}
           onChange={(e, value) => setPageNum(value)}
         />
       </div>
