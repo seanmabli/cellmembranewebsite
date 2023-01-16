@@ -9,7 +9,7 @@ export const SubsectionButton = styled(Button)({
   margin: "5px",
   "&:hover": {
     borderColor: "black",
-  },
+  }
 });
 
 export function Navbar() {

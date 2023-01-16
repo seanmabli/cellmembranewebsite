@@ -1,10 +1,9 @@
-import "./summary.css";
 import { Tooltip } from "@mui/material";
 
 export function Summary() {
   return (
     <div>
-      <h1 className="title">Summary</h1>
+      <h1>Summary</h1>
       <p>
         <Tooltip title = 'A selectively permeable membrane that separates the interior of a cell from the external environment or creates intracellular compartments by serving as a boundary between one part of the cell and another'>
           <strong>

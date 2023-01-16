@@ -1,12 +1,10 @@
 import { Tooltip } from "@mui/material";
-import "./amphipathicity.css";
 import Pagination from "@mui/material/Pagination";
-import membranefluidity11 from "./membranefluidity11.mp4";
 import membranefluidity12 from "./membranefluidity12.png";
 import membranefluidity14 from "./membranefluidity14.png";
+import membranefluidity15 from "./membranefluidity15.png";
 import { useState } from "react";
-import { Player } from 'video-react';
-import "./page.css"
+import "../compodents/page.css";
 
 export function MembraneLipidsMembraneFluidity1() {
   const [pageNum, setPageNum] = useState(1);
@@ -30,13 +28,19 @@ export function MembraneLipidsMembraneFluidity1() {
             stabilization of membranes.
           </p>
         </div>
-        {/* 
-    <Player>
-      <source src={membranefluidity11} />
-    </Player>*/}
-
+        <div className="imagecontainer">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/lm-dAvbl330"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
         <Pagination
-          count={4}
+          count={5}
           shape="rounded"
           className="pagination1"
           page={pageNum}
@@ -74,11 +78,11 @@ export function MembraneLipidsMembraneFluidity1() {
             excluding them.
           </p>
         </div>
-    <div className="imagecontainer">
-        <img  src={membranefluidity12} />
-    </div>
+        <div className="imagecontainer">
+          <img src={membranefluidity12} />
+        </div>
         <Pagination
-          count={4}
+          count={5}
           shape="rounded"
           className="pagination1"
           page={pageNum}
@@ -118,11 +122,11 @@ export function MembraneLipidsMembraneFluidity1() {
             shielded from water).
           </p>
         </div>
-    <div className="imagecontainer">
-        <img src={membranefluidity12} />
-    </div>
+        <div className="imagecontainer">
+          <img src={membranefluidity12} />
+        </div>
         <Pagination
-          count={4}
+          count={5}
           shape="rounded"
           className="pagination1"
           page={pageNum}
@@ -176,11 +180,54 @@ export function MembraneLipidsMembraneFluidity1() {
             and water.
           </p>
         </div>
-    <div className="imagecontainer">
-        <img src={membranefluidity14} />
-    </div>
+        <div className="imagecontainer">
+          <img src={membranefluidity14} />
+        </div>
         <Pagination
-          count={4}
+          count={5}
+          shape="rounded"
+          className="pagination1"
+          page={pageNum}
+          onChange={(e, value) => setPageNum(value)}
+        />
+      </div>
+    );
+  } else if (pageNum == 5) {
+    return (
+      <div>
+        <div className="paragraphs2">
+          <h1>The Lipid Bilayer is a Two-Dimensional Fluid</h1>
+          <p>
+            Since the forces holding the bilayer together are weak non-covalent
+            interactions, the lipids and many of the associated proteins in the
+            membrane are not rigidly held in place and can move around quite
+            easily within the same plane. This movement is referred to as{" "}
+            <Tooltip title="define">
+              <span style={{ textDecoration: "underline" }}>
+                <strong>membrane fluidity</strong>
+              </span>
+            </Tooltip>
+            . There are no barriers against lateral diffusion and rotation.
+            However, transverse movement, or "flip- flop" from one side of the
+            bilayer to the other, is energetically unfavorable and therefore
+            rare. Thus, the fluidity of cell membranes is confined to two
+            dimensions.
+          </p>
+          <p>
+            <strong>Can membrane lipids rotate? </strong> Yes
+          </p>
+          <p>
+            <strong>Can membrane lipids flip-flop? </strong> No
+          </p>
+          <p>
+            <strong>Can membrane lipids move laterally? </strong> Yes
+          </p>
+        </div>
+        <div className="imagecontainer">
+          <img src={membranefluidity15} />
+        </div>
+        <Pagination
+          count={5}
           shape="rounded"
           className="pagination1"
           page={pageNum}
