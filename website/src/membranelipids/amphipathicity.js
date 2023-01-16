@@ -1,5 +1,4 @@
 import { Tooltip } from "@mui/material";
-import "./amphipathicity.css";
 import Pagination from "@mui/material/Pagination";
 import amphipathicity from "./amphipathicity.png";
 import { useState } from "react";
@@ -10,7 +9,7 @@ export function MembraneLipidsAmphipathicity() {
   if (pageNum === 1) {
     return (
       <div>
-        <div className="paragraphs2">
+        <div className="text">
           <h1>Membrane Lipids are Amphipathic</h1>
           <p>
             In general,{" "}
@@ -64,11 +63,13 @@ export function MembraneLipidsAmphipathicity() {
             shortly.
           </p>
         </div>
-        <img className="image3" src={amphipathicity} />
+        <div className="imagecontainer">
+          <img src={amphipathicity} />
+        </div>
         <Pagination
           count={3}
           shape="rounded"
-          className="pagination1"
+          className="paginationstyle"
           page={pageNum}
           onChange={(e, value) => setPageNum(value)}
         />
@@ -77,7 +78,7 @@ export function MembraneLipidsAmphipathicity() {
   } else if (pageNum === 2) {
     return (
       <div>
-        <div className="paragraphs2">
+        <div className="text">
           <h1>Lipid Tails can be Saturated or Unsaturated</h1>
           <p>
             <p>
@@ -123,11 +124,13 @@ export function MembraneLipidsAmphipathicity() {
             </p>
           </p>
         </div>
-        <img className="image3" src={amphipathicity} />
+        <div className="imagecontainer">
+          <img src={amphipathicity} />
+        </div>
         <Pagination
           count={3}
           shape="rounded"
-          className="pagination1"
+          className="paginationstyle"
           page={pageNum}
           onChange={(e, value) => setPageNum(value)}
         />
@@ -136,7 +139,7 @@ export function MembraneLipidsAmphipathicity() {
   } else if (pageNum === 3) {
     return (
       <div>
-        <div className="paragraphs2">
+        <div className="text">
           <h1>Glycolipids and Cholesterol</h1>
           <p>
             Unlike{" "}
@@ -177,11 +180,13 @@ export function MembraneLipidsAmphipathicity() {
             discussed shortly.
           </p>
         </div>
-        <img className="image3" src={amphipathicity} />
+        <div className="imagecontainer">
+          <img src={amphipathicity} />
+        </div>
         <Pagination
           count={3}
           shape="rounded"
-          className="pagination1"
+          className="paginationstyle"
           page={pageNum}
           onChange={(e, value) => setPageNum(value)}
         />

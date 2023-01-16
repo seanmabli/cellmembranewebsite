@@ -12,7 +12,7 @@ export function MembraneLipidsMembraneFluidity1() {
   if (pageNum === 1) {
     return (
       <div>
-        <div className="paragraphs2">
+        <div className="text">
           <h1>The Hydrophobic Effect Holds the Bilayer Together</h1>
           <p>
             When lipids are added to water, lipid bilayer sheets{" "}
@@ -51,7 +51,7 @@ export function MembraneLipidsMembraneFluidity1() {
   } else if (pageNum === 2) {
     return (
       <div>
-        <div className="paragraphs2">
+        <div className="text">
           <h1>The Hydrophobic Effect Holds the Bilayer Together</h1>
           <p>
             The hydrophobic effect can be thought of as "the Jaw of maximization
@@ -93,7 +93,7 @@ export function MembraneLipidsMembraneFluidity1() {
   } else if (pageNum === 3) {
     return (
       <div>
-        <div className="paragraphs2">
+        <div className="text">
           <h1>The Hydrophobic Effect Holds the Bilayer Together</h1>
           <p>
             A major difference between membrane lipids and oil is that while oil
@@ -137,7 +137,7 @@ export function MembraneLipidsMembraneFluidity1() {
   } else if (pageNum === 4) {
     return (
       <div>
-        <div className="paragraphs2">
+        <div className="text">
           <h1>The Hydrophobic Effect Holds the Bilayer Together</h1>
           <p>
             This figure overlay demonstrates how{" "}
@@ -195,7 +195,7 @@ export function MembraneLipidsMembraneFluidity1() {
   } else if (pageNum == 5) {
     return (
       <div>
-        <div className="paragraphs2">
+        <div className="text">
           <h1>The Lipid Bilayer is a Two-Dimensional Fluid</h1>
           <p>
             Since the forces holding the bilayer together are weak non-covalent
