@@ -42,7 +42,7 @@ export function MembraneLipidsMembraneFluidity1() {
         <Pagination
           count={5}
           shape="rounded"
-          className="pagination1"
+          className="paginationcontainer"
           page={pageNum}
           onChange={(e, value) => setPageNum(value)}
         />
@@ -84,7 +84,7 @@ export function MembraneLipidsMembraneFluidity1() {
         <Pagination
           count={5}
           shape="rounded"
-          className="pagination1"
+          className="paginationcontainer"
           page={pageNum}
           onChange={(e, value) => setPageNum(value)}
         />
@@ -128,7 +128,7 @@ export function MembraneLipidsMembraneFluidity1() {
         <Pagination
           count={5}
           shape="rounded"
-          className="pagination1"
+          className="paginationcontainer"
           page={pageNum}
           onChange={(e, value) => setPageNum(value)}
         />
@@ -186,7 +186,7 @@ export function MembraneLipidsMembraneFluidity1() {
         <Pagination
           count={5}
           shape="rounded"
-          className="pagination1"
+          className="paginationcontainer"
           page={pageNum}
           onChange={(e, value) => setPageNum(value)}
         />
@@ -229,7 +229,7 @@ export function MembraneLipidsMembraneFluidity1() {
         <Pagination
           count={5}
           shape="rounded"
-          className="pagination1"
+          className="paginationcontainer"
           page={pageNum}
           onChange={(e, value) => setPageNum(value)}
         />

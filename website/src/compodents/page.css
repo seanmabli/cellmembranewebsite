@@ -6,9 +6,15 @@
 }
 
 .imagecontainer {
-    margin-top: 50px;
+    padding-top: 50px;
     max-width: 50%;
     max-height: 400px;
     display: flex;
     justify-content: center;
+}
+
+.paginationcontainer {
+    float: right;
+    padding-left: 55%;
+    padding-right: 10%;
 }

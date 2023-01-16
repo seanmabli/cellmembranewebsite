@@ -1,9 +1,8 @@
 import { Tooltip } from "@mui/material";
-import "./integralandperipheral.css";
 import Pagination from "@mui/material/Pagination";
-import { useNavigate, useLocation } from "react-router-dom";
 import integralperipheral from "./integralperipheral.png";
 import { useState } from "react";
+import "../compodents/page.css";
 
 export function MembraneProteinIntegralAndPeripheral() {
   const [pageNum, setPageNum] = useState(1);
@@ -11,7 +10,7 @@ export function MembraneProteinIntegralAndPeripheral() {
   if (pageNum === 1) {
     return (
       <div>
-        <div className="paragraphs3">
+        <div className="text">
           <h1>Membrane Proteins are Integral or Peripheral</h1>
           <p>
             Membrane proteins are crucial both for membrane function and
@@ -45,11 +44,13 @@ export function MembraneProteinIntegralAndPeripheral() {
             membrane.
           </p>
         </div>
-        <img className="image3" src={integralperipheral} />
+        <div className="imagecontainer">
+          <img src={integralperipheral} />
+        </div>
         <Pagination
           count={3}
           shape="rounded"
-          className="pagination1"
+          className="paginationcontainer"
           onChange={(e, value) => setPageNum(value)}
         />
       </div>
@@ -57,7 +58,7 @@ export function MembraneProteinIntegralAndPeripheral() {
   } else if (pageNum === 2) {
     return (
       <div>
-        <div className="paragraphs3">
+        <div className="text">
           <h1>Transmembrane Domains are Helices</h1>
           <p>
             Most integral membrane proteins span the lipid bilayer with either a
@@ -77,11 +78,13 @@ export function MembraneProteinIntegralAndPeripheral() {
             hydrophilic.
           </p>
         </div>
-        <img className="image3" src={integralperipheral} />
+        <div className="imagecontainer">
+          <img src={integralperipheral} />
+        </div>
         <Pagination
           count={3}
           shape="rounded"
-          className="pagination1"
+          className="paginationcontainer"
           onChange={(e, value) => setPageNum(value)}
         />
       </div>
@@ -89,7 +92,7 @@ export function MembraneProteinIntegralAndPeripheral() {
   } else if (pageNum === 3) {
     return (
       <div>
-        <div className="paragraphs3">
+        <div className="text">
           <h1>Proteins are Asymmetric</h1>
           <p>
             In most cases, proteins are asymmetric, and their orientation is
@@ -107,7 +110,9 @@ export function MembraneProteinIntegralAndPeripheral() {
             flipping preserves the asymmetry of the membrane.
           </p>
         </div>
-        <img className="imag3" src={integralperipheral} />
+        <div className="imagecontainer">
+          <img src={integralperipheral} />
+        </div>
         <Pagination
           count={3}
           shape="rounded"
