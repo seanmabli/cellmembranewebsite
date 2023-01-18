@@ -2,9 +2,38 @@ import { Tooltip } from "@mui/material";
 import Pagination from "@mui/material/Pagination";
 import amphipathicity from "./amphipathicity.png";
 import { useState } from "react";
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Modal from '@mui/material/Modal';
+
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: '70%',
+  bgcolor: '#6FF6FF',
+  border: '2px solid #000',
+  boxShadow: 24,
+  p: 4,
+};
+const styleButton = {
+  color: "black",
+  borderColor: "black",
+  margin: "5px",
+  paddingLeft: "80%",
+  marginBottom: 30,
+  "&:hover": {
+    borderColor: "black",
+  }
+}
 
 export function MembraneLipidsAmphipathicity() {
   const [pageNum, setPageNum] = useState(1);
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   if (pageNum === 1) {
     return (
@@ -73,6 +102,26 @@ export function MembraneLipidsAmphipathicity() {
           page={pageNum}
           onChange={(e, value) => setPageNum(value)}
         />
+        <div>
+      <Button sx={styleButton} onClick={handleOpen}>Extra Info</Button>
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style}>
+          <Typography id="modal-modal-title" variant="h6" component="h2">
+            <h4>Extra Info:</h4>
+            <h5>Amphipathic molecules have both polar (hydrophilic) and non-polar (hydrophobic) parts. Can you think of the most polar and least polar types of bonds found commonly in biological systems?</h5>
+            <h4>Answer:</h4>
+            <p>In order of decreasing polarity, here are some polar bonds commonly found in biological systems: carboxyl (C=OH), amino (C-NH2), and hydroxyl (C-OH).</p>
+            <p>The carbon-hydrogen (C-H) bond is only barely polar, and the carbon-carbon (C-C) bond is not polar at all, so they both act as non-polar.</p>
+            <p>Keep in mind that amphipathic molecules usually contain regions taht are almost exclusively non-polar (like hydrocarbons, which contain only C-C and C-H bonds) as well as regions that are polar (featuring, for example, C=O, C-OH, and C-NH2 bonds).</p>
+          </Typography>
+        </Box>
+      </Modal>
+    </div>
       </div>
     );
   } else if (pageNum === 2) {
