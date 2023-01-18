@@ -63,7 +63,7 @@ export function MembraneLipidsMembraneFluidity2() {
 
         <div style={{ width: "300px", padding: "0px 40px" }}>
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <p>Temperature</p>
+            <p>Temperature (Input)</p>
           </div>
           <Slider
             aria-label="Temperature"
@@ -89,7 +89,7 @@ export function MembraneLipidsMembraneFluidity2() {
         </div>
         <div style={{ width: "300px", padding: "0px 40px" }}>
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <p>Lipid Tail Length</p>
+            <p>Lipid Tail Length (Input)</p>
           </div>
           <Slider
             aria-label="Lipid Tail Length"
@@ -115,7 +115,7 @@ export function MembraneLipidsMembraneFluidity2() {
         </div>
         <div style={{ width: "300px", padding: "0px 40px" }}>
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <p>Degree of Unsaturation</p>
+            <p>Degree of Unsaturation (Input)</p>
           </div>
           <Slider
             aria-label="Degree of Unsaturation"

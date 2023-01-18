@@ -5,6 +5,31 @@ import membranefluidity14 from "./membranefluidity14.png";
 import membranefluidity15 from "./membranefluidity15.png";
 import { useState } from "react";
 import "../compodents/page.css";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import Modal from "@mui/material/Modal";
+
+const style = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: "70%",
+  bgcolor: "#6FF6FF",
+  border: "2px solid #000",
+  boxShadow: 24,
+  p: 4,
+};
+const styleButton = {
+  color: "black",
+  borderColor: "black",
+  margin: "5px",
+  marginLeft: "50%",
+  "&:hover": {
+    borderColor: "black",
+  },
+};
 
 export function MembraneLipidsMembraneFluidity1() {
   const [pageNum, setPageNum] = useState(1);
@@ -47,6 +72,7 @@ export function MembraneLipidsMembraneFluidity1() {
           page={pageNum}
           onChange={(e, value) => setPageNum(value)}
         />
+        <ExtraInfo />
       </div>
     );
   } else if (pageNum === 2) {
@@ -89,6 +115,7 @@ export function MembraneLipidsMembraneFluidity1() {
           page={pageNum}
           onChange={(e, value) => setPageNum(value)}
         />
+        <ExtraInfo />
       </div>
     );
   } else if (pageNum === 3) {
@@ -133,6 +160,7 @@ export function MembraneLipidsMembraneFluidity1() {
           page={pageNum}
           onChange={(e, value) => setPageNum(value)}
         />
+        <ExtraInfo />
       </div>
     );
   } else if (pageNum === 4) {
@@ -191,6 +219,7 @@ export function MembraneLipidsMembraneFluidity1() {
           page={pageNum}
           onChange={(e, value) => setPageNum(value)}
         />
+        <ExtraInfo />
       </div>
     );
   } else if (pageNum == 5) {
@@ -240,9 +269,51 @@ export function MembraneLipidsMembraneFluidity1() {
           page={pageNum}
           onChange={(e, value) => setPageNum(value)}
         />
+        <ExtraInfo />
       </div>
     );
   } else {
     return null;
   }
+}
+
+function ExtraInfo() {
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
+  return (
+    <div>
+      <Button sx={styleButton} onClick={handleOpen}>
+        Extra Info
+      </Button>
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style}>
+          <Typography id="modal-modal-title" variant="h6" component="h2">
+            <h4>Extra Info:</h4>
+            <p>
+              Which common household product is composed of molecules whose
+              function depends on their amphipathic nature?
+            </p>
+            <h4>Answer:</h4>
+            <p>
+              Soap is made up of fatty acids, which are amphipathic. The fatty
+              acids in soap have a single charged head group (for example, a
+              carboxyl group) and a long hydrocarbon tail. In water, fatty acid
+              molecules tend to form micelles. The micelle, like the bilayer, is
+              a compromise between the hydrophilic lipid head and the
+              hydrophobic lipid tail. Lipids whose heads are far wider than
+              their tails are more prone to forming micelles instead of
+              bilayers.
+            </p>
+          </Typography>
+        </Box>
+      </Modal>
+    </div>
+  );
 }
