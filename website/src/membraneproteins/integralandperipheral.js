@@ -3,6 +3,31 @@ import Pagination from "@mui/material/Pagination";
 import integralperipheral from "./integralperipheral.png";
 import { useState } from "react";
 import "../compodents/page.css";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import Modal from "@mui/material/Modal";
+
+const style = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: "70%",
+  bgcolor: "#6FF6FF",
+  border: "2px solid #000",
+  boxShadow: 24,
+  p: 4,
+};
+const styleButton = {
+  color: "black",
+  borderColor: "black",
+  margin: "5px",
+  marginLeft: "50%",
+  "&:hover": {
+    borderColor: "black",
+  },
+};
 
 export function MembraneProteinIntegralAndPeripheral() {
   const [pageNum, setPageNum] = useState(1);
@@ -59,6 +84,7 @@ export function MembraneProteinIntegralAndPeripheral() {
           page={pageNum}
           onChange={(e, value) => setPageNum(value)}
         />
+        <PopQuiz />
       </div>
     );
   } else if (pageNum === 2) {
@@ -98,6 +124,7 @@ export function MembraneProteinIntegralAndPeripheral() {
           page={pageNum}
           onChange={(e, value) => setPageNum(value)}
         />
+        <PopQuiz />
       </div>
     );
   } else if (pageNum === 3) {
@@ -133,9 +160,91 @@ export function MembraneProteinIntegralAndPeripheral() {
           page={pageNum}
           onChange={(e, value) => setPageNum(value)}
         />
+        <PopQuiz />
       </div>
     );
   } else {
     return null;
+  }
+}
+
+function PopQuiz() {
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const [answer, setAnswer] = useState(false);
+
+  if (!answer) {
+    return (
+      <div>
+        <Button sx={styleButton} onClick={handleOpen}>
+          Pop Quiz
+        </Button>
+        <Modal
+          open={open}
+          onClose={() => {
+            setAnswer(false);
+            setOpen(false);
+          }}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
+          <Box sx={style}>
+            <Typography id="modal-modal-title" variant="h6" component="h2">
+              <h4>Pop Quiz:</h4>
+              <p>
+                How could you identify a transmembrane helix just by examining
+                the amino acid sequence of a protein?
+              </p>
+              <h4>Answer:</h4>
+              <Button sx={styleButton} onClick={() => setAnswer(true)}>
+                Show Answer
+              </Button>
+            </Typography>
+          </Box>
+        </Modal>
+      </div>
+    );
+  } else {
+    return (
+      <div>
+        <Button sx={styleButton} onClick={handleOpen}>
+          Pop Quiz
+        </Button>
+        <Modal
+          open={open}
+          onClose={() => {
+            setAnswer(false);
+            setOpen(false);
+          }}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
+          <Box sx={style}>
+            <Typography id="modal-modal-title" variant="h6" component="h2">
+              <h4>Pop Quiz:</h4>
+              <p>
+                How could you identify a transmembrane helix just by examining
+                the amino acid sequence of a protein?
+              </p>
+              <h4>Answer:</h4>
+              <p>
+                Transmembrane helices can often be identified from a protein's
+                sequence as characteristic stretches of two-dozen or so
+                hydrophobic amino acids (or, more appropriately, amino acids
+                with hydrophobic side chains; these are glycine, alanine,
+                phenylalanine, leucine, valine, and isoleucine).
+              </p>
+              <p>
+                A cautionary note: transmembrane domains are not always entirely
+                composed of hydrophobic amino acids. Hydrophilic residues are
+                often present; one use for such residues is to line the inside
+                of channels and pores in order to allow hydrophilic molecules to
+                pass through the membrane.
+              </p>
+            </Typography>
+          </Box>
+        </Modal>
+      </div>
+    );
   }
 }
