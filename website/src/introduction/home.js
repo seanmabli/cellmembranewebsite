@@ -18,9 +18,9 @@ export function Home() {
         the lesson.
       </p>
       <p>
-        Created 2022 for Mrs. Shopiro's Accelerated Advanced Biology class.
+        Created 2022 for Mrs. Shopiro's Accelerated Biology class.
         <br />
-        Coded by: Sean Mabli, Adam Mokdad, Arjun Goray, Jagan Mranal, Zain Khan
+        Coded by: Arjun Goray, Zain Khan, Sean Mabli, Adam Mokdad, Jagan Mranal
       </p>
     </div>
   );
