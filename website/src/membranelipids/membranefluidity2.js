@@ -6,6 +6,31 @@ import membranefluidity23 from "./membranefluidity23.png";
 import membranefluidity24 from "./membranefluidity24.png";
 import membranefluidity25 from "./membranefluidity25.png";
 import { useState } from "react";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import Modal from "@mui/material/Modal";
+
+const style = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: "70%",
+  bgcolor: "#6FF6FF",
+  border: "2px solid #000",
+  boxShadow: 24,
+  p: 4,
+};
+const styleButton = {
+  color: "black",
+  borderColor: "black",
+  margin: "5px",
+  marginLeft: "50%",
+  "&:hover": {
+    borderColor: "black",
+  },
+};
 
 export function MembraneLipidsMembraneFluidity2() {
   const [tempValue, setTempValue] = React.useState(0);
@@ -141,6 +166,7 @@ export function MembraneLipidsMembraneFluidity2() {
         </div>
       </div>
       <MembraneFluidity2Pagination />
+      <PopQuiz />
     </div>
   );
 }
@@ -355,5 +381,91 @@ function MembraneFluidity2Pagination() {
     );
   } else {
     return null;
+  }
+}
+
+function PopQuiz() {
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const [answer, setAnswer] = useState(false);
+
+  if (!answer) {
+    return (
+      <div>
+        <Button sx={styleButton} onClick={handleOpen}>
+          Pop Quiz
+        </Button>
+        <Modal
+          open={open}
+          onClose={() => {
+            setAnswer(false);
+            setOpen(false);
+          }}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
+          <Box sx={style}>
+            <Typography id="modal-modal-title" variant="h6" component="h2">
+              <h4>Pop Quiz:</h4>
+              <p>
+                What type of bonding dominates interactions between lipid tails
+                and limits fluidity?
+              </p>
+              <ul>
+                <li>the hydrophobic effect</li>
+                <li>van der Waals forces</li>
+                <li>electrostatic interactions</li>
+                <li>hydrogen bonding</li>
+              </ul>
+              <h4>Answer:</h4>
+              <Button sx={styleButton} onClick={() => setAnswer(true)}>
+                Show Answer
+              </Button>
+            </Typography>
+          </Box>
+        </Modal>
+      </div>
+    );
+  } else {
+    return (
+      <div>
+        <Button sx={styleButton} onClick={handleOpen}>
+          Pop Quiz
+        </Button>
+        <Modal
+          open={open}
+          onClose={() => {
+            setAnswer(false);
+            setOpen(false);
+          }}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
+          <Box sx={style}>
+            <Typography id="modal-modal-title" variant="h6" component="h2">
+              <h4>Pop Quiz:</h4>
+              <p>
+                What type of bonding dominates interactions between lipid tails
+                and limits fluidity?
+              </p>
+              <ul>
+                <li>the hydrophobic effect</li>
+                <li>van der Waals forces</li>
+                <li>electrostatic interactions</li>
+                <li>hydrogen bonding</li>
+              </ul>
+              <h4>Answer:</h4>
+              <p>
+                Van der Waals forces among lipid tails play a substantial role
+                in limiting membrane fluidity. For example, increasing the
+                length of lipid tails increases van der Waals interactions
+                between tails, decreasing the movement of lipids through the
+                membrane.
+              </p>
+            </Typography>
+          </Box>
+        </Modal>
+      </div>
+    );
   }
 }
