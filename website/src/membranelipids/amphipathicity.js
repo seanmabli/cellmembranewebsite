@@ -252,7 +252,7 @@ function ExtraInfo() {
             <h4>Answer:</h4>
             <p>
               In order of decreasing polarity, here are some polar bonds
-              commonly found in biological systems: carboxyl (C=OH), amino
+              commonly found in biological systems: carboxyl (COOH), amino
               (C-NH2), and hydroxyl (C-OH).
             </p>
             <p>
